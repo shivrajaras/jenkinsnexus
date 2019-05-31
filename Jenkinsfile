@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'java8' }
+    agent { label 'java }
     environment {
         EMAIL_RECIPIENTS = 'shivu483@gmail.com'
     }
