@@ -48,6 +48,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>${project.groupId}-${project.artifactId}-${project.version}</finalName>
 	</build>
 	<distributionManagement>
 		<repository>
