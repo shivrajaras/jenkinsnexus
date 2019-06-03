@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                         def pom = readMavenPom file: 'pom.xml'
-                        sh "/bin/bash /home/shivaraja/deploy.sh java ${pom.groupId} ${pom.artifactId} ${pom.version}"
+                        sh "sudo -u deploy ./deploy.sh java ${pom.groupId} ${pom.artifactId} ${pom.version}"
                          echo " uploaded successfully"
                        
             }
