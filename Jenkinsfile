@@ -1,4 +1,3 @@
-
 pipeline{
 				 agent any
 				 environment {
@@ -24,7 +23,7 @@ pipeline{
 										}
     						          steps {
     						          			script{
-    						          			             git branch: '${params.branch}', credentialsId: 'git', url: 'https://github.com/shivrajaras/jenkinsnexus.git'
+    						          			             git branch: "${params.branch}", credentialsId: 'git', url: 'https://github.com/shivrajaras/jenkinsnexus.git'
                                                              echo "hi how are you"
                                                              echo "enterd branch name ${params.branch}"
 
