@@ -55,7 +55,7 @@ pipeline{
                 											   echo  "verstion ${pom.version}"
                                                                def workspace = "/var/lib/jenkins"
                                                                echo "Deploying to ${params.environment}"
-                                                               sh "ssh -o StrictHostKeyChecking=no -i ${workspace}/prod_login_key.txt -p 2779 deploy@139.162.46.185 'bash -s ' < ${workspace}/deploy.sh java ${pom.groupId} ${pom.artifactId} ${pom.version}"
+                                                               //sh "ssh -o StrictHostKeyChecking=no -i ${workspace}/prod_login_key.txt -p 2779 deploy@139.162.46.185 'bash -s ' < ${workspace}/deploy.sh java ${pom.groupId} ${pom.artifactId} ${pom.version}"
                                                   }
                                         }
     						}
